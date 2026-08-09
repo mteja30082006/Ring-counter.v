@@ -1,0 +1,48 @@
+4-BIT RING COUNTER SIMULATION
+
+Initial Reset
+
+RESET = 1
+Q = 1000
+
+Counter Operation
+
+After reset is released:
+
+Clock 1 → Q = 0100
+Clock 2 → Q = 0010
+Clock 3 → Q = 0001
+Clock 4 → Q = 1000
+Clock 5 → Q = 0100
+Clock 6 → Q = 0010
+Clock 7 → Q = 0001
+Clock 8 → Q = 1000
+
+Sequence
+
+1000
+ ↓
+0100
+ ↓
+0010
+ ↓
+0001
+ ↓
+1000
+
+Reset Test
+
+When reset is activated again:
+
+RESET = 1
+Q = 1000
+
+After reset is released, the sequence starts again:
+
+1000 → 0100 → 0010 → 0001 → 1000
+
+Result
+
+The 4-bit ring counter successfully produces the expected one-hot rotating sequence.
+
+RESULT: PASS
